@@ -1,10 +1,14 @@
 package main
 
 import (
+	"bufio"
 	"context"
 	"database/sql"
 	"fmt"
 	"log"
+	"os"
+	"strconv"
+	"strings"
 
 	_ "github.com/denisenkom/go-mssqldb"
 )
@@ -17,6 +21,7 @@ var (
 	database               = "OlympicsDb"
 	TrustServerCertificate = true
 	db                     *sql.DB
+	counter                = 1
 )
 
 func main() {
@@ -33,10 +38,43 @@ func main() {
 	log.Println("Connected")
 	defer db.Close()
 
-	InsertTmp(1, "A Dijiang", "M", 24, 180, 80, "dsf", "ffd", "cddc", "2024", "vdvdvd", "cdcd", "ccdcdc", "cdcdcd", "cdcd")
+	file, errFile := os.Open("./Dane/athlete_events.csv")
+	first := true
+	if errFile != nil {
+		log.Fatal(err)
+	}
+
+	scanner := bufio.NewScanner(file)
+
+	for scanner.Scan() {
+		if first {
+			first = false
+			continue
+		}
+		InsertTmp(form(strings.Replace(scanner.Text(), "\"", "", -1)))
+	}
+
+	if err := scanner.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	file.Close()
+
+	// InsertTmp(1, "A Dijiang", "M", 24, 180, 80, "dsf", "ffd", "cddc", "2024", "vdvdvd", "cdcd", "ccdcdc", "cdcdcd", "cdcd")
 }
 
-func InsertTmp(id int, nazwa, plec string, wiek, wzrost, waga int, druzyna, kod, zawody, rok, tryb, miasto, sport, wydarzenie, medal string) (int64, error) {
+func form(line string) (nazwa, plec string, wiek, wzrost, waga int, druzyna, kod, zawody, rok, tryb, miasto, sport, wydarzenie, medal string) {
+	data := strings.Split(line, ",")
+	Wiek, _ := strconv.Atoi(data[3])
+	log.Println(Wiek)
+	Wzrost, _ := strconv.Atoi(data[4])
+	Waga, _ := strconv.Atoi(data[5])
+	log.Printf("Id: %v, Nazwa: %s, Plec: %s", 32, data[1], data[2])
+	return data[1], data[2], Wiek, Wzrost, Waga, data[6], data[7],
+		data[8], data[9], data[10], data[11], data[12], data[13], data[14]
+}
+
+func InsertTmp(nazwa, plec string, wiek, wzrost, waga int, druzyna, kod, zawody, rok, tryb, miasto, sport, wydarzenie, medal string) (int64, error) {
 	ctx := context.Background()
 
 	if db == nil {
@@ -47,7 +85,7 @@ func InsertTmp(id int, nazwa, plec string, wiek, wzrost, waga int, druzyna, kod,
 
 	result, err := db.ExecContext(
 		ctx, tsql,
-		sql.Named("Id", id),
+		sql.Named("Id", counter),
 		sql.Named("Nazwa", nazwa),
 		sql.Named("Plec", plec),
 		sql.Named("Wiek", wiek),
@@ -69,6 +107,7 @@ func InsertTmp(id int, nazwa, plec string, wiek, wzrost, waga int, druzyna, kod,
 		return -1, err
 	}
 
+	counter += 1
 	return result.LastInsertId()
 
 }

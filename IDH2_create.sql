@@ -125,7 +125,7 @@ CREATE TABLE OlympicsDb..ZespolT (
 -- Table: Tmp
 CREATE TABLE OlympicsDb..Tmp (
     id int primary key,
-    nazwa varchar(40)  NOT NULL,
+    nazwa varchar(60)  NOT NULL,
     plec varchar(1)  NOT NULL,
     wiek int NOT NULL,
     wzrost int  NOT NULL,
@@ -137,7 +137,7 @@ CREATE TABLE OlympicsDb..Tmp (
     tryb varchar(20)  NOT NULL,
     miasto varchar(30)  NOT NULL,
     sport varchar(30)  NOT NULL,
-    wydarzenie varchar(40)  NOT NULL,
+    wydarzenie varchar(60)  NOT NULL,
     medal varchar(20)  NOT NULL,
 );
 
