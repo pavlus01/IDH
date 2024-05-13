@@ -1,2 +1,0 @@
-# IDH
-IDH project
