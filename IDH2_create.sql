@@ -124,21 +124,22 @@ CREATE TABLE OlympicsDb..ZespolT (
 
 -- Table: Tmp
 CREATE TABLE OlympicsDb..Tmp (
-    id int primary key,
-    nazwa varchar(60)  NOT NULL,
-    plec varchar(1)  NOT NULL,
-    wiek int NOT NULL,
-    wzrost int  NOT NULL,
-    waga int  NOT NULL,
-    druzyna varchar(40)  NOT NULL,
-    druzyna_kod varchar(3)  NOT NULL,
-    zawody varchar(45)  NOT NULL,
-    rok varchar(4)  NOT NULL,
-    tryb varchar(20)  NOT NULL,
-    miasto varchar(30)  NOT NULL,
-    sport varchar(30)  NOT NULL,
-    wydarzenie varchar(60)  NOT NULL,
-    medal varchar(20)  NOT NULL,
+    id int identity primary key,
+    id_zawodnik int,
+    nazwa varchar(80),
+    plec varchar(1),
+    wiek int,
+    wzrost int,
+    waga int,
+    druzyna varchar(60),
+    druzyna_kod varchar(3),
+    zawody varchar(45),
+    rok varchar(4),
+    tryb varchar(20),
+    miasto varchar(30),
+    sport varchar(30),
+    wydarzenie varchar(100),
+    medal varchar(20),
 );
 
 -- foreign keys
