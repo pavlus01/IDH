@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="MedalT"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{DBD7A5BB-2091-4608-A60F-D13B280E5EFC}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{FE3E10F2-E739-4AFF-A66F-49FED1370C90}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABGm5DV9CZmI++beCrnbLHIYoPNRcppoS4O9VTexbqksgAAAAAOgAAAAAIAACAAAAAXmnXbuhv5gJxeIho6fN2MJdCRX/XnpbDG09lc1ZqrySAAAABQj8zyC7VQqp45SieyZ7wwgCAyPrccHp8sxBtzTcFaW0AAAAAAv1SmeU6xSlJMYtlx7FImK442BMBuMS4P7O4LENVv2pO9W3s3Cs5J2OHIfn3F++QE7vxMAkqHat2m1KbN6T/O</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADCbJL39hTSicIvdaAwIkLi3dhy9bN16gY0HVr2tWpUOQAAAAAOgAAAAAIAACAAAAALR5RvVIB/tB4+oQsQUi8rj65xf2Ll9kJYlzJFrMGWDyAAAAA0404X5G/W9l8CnM3gYHGOaksBhU+DfpWClODIQNu7S0AAAACC91j9PWAaq7JKuNh26vPPKPzruNQmQ3MnIc0w2WT8vWJWrGsF7pOnjuKFyaF+/LfRxPbNM9oLe0m80AoWPyV7</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -338,37 +338,25 @@ WHERE Medal &lt;&gt; '';</property>
         <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
-          TopLeft="157,290" />
+          TopLeft="152,292" />
         <NodeLayout
           Size="170,42"
           Id="Package\Execute SQL Task"
           TopLeft="140,114" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="225,156">
+          TopLeft="227.25,156">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="9.5,134"
+              EndConnector="0,136"
               Start="0,0"
-              End="9.5,126.5">
+              End="0,128.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,63"
-                    Point2="0,67"
-                    Point3="4,67" />
-                  <mssgle:LineSegment
-                    End="5.5,67" />
-                  <mssgle:CubicBezierSegment
-                    Point1="5.5,67"
-                    Point2="9.5,67"
-                    Point3="9.5,71" />
-                  <mssgle:LineSegment
-                    End="9.5,126.5" />
+                    End="0,128.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -386,13 +374,13 @@ WHERE Medal &lt;&gt; '';</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="157,42"
-          Id="Package\Data Flow Task\OLE DB Source"
-          TopLeft="197,112" />
-        <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
           TopLeft="191,257" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="197,112" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="277.5,154">
@@ -419,7 +407,7 @@ WHERE Medal &lt;&gt; '';</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -432,7 +420,7 @@ WHERE Medal &lt;&gt; '';</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    design-time-name="Package\Data Flow Task\OLE DB Source">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
