@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="5/13/2024 10:32:30 PM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="MedalT"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{FE3E10F2-E739-4AFF-A66F-49FED1370C90}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{D964467C-2772-4B21-B7C5-65F502E35041}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD0rvUKUU7QyYSWxOXnEfUyt0LERzeMw6UdgY095ymVnQAAAAAOgAAAAAIAACAAAADu6AdfNR2D0cAGI5E+ZM4tHM82fTgPRoCyilQ03nQ7KiAAAAC/l5MigF8Fnp/hWDqiviyUkWeiZ8HASkj9qnT0jUn6RUAAAACjLU1qPSS9fx/FiLc21N+wpHZMluZiFAouKNZM6hkkLFahTVr3vUl19kP27MfIPFr5CU1CnqqdyTvjVygVzMim</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABxwp9TgCAt//euQ1QGtzstHO3CvXstE+Dlcmm/ygplqgAAAAAOgAAAAAIAACAAAACePK0fpZSk6DI4hF1R6ImnjRoHrV+JmDtDqcCuU+u64yAAAADNN/k1rMI4X/XShn5d2hXn5PDc/lWDlSIO79GHwB/K8kAAAAB+93G9ft+z/ZjvsUUPUiSHUIjdKIN01Xz3HR3taxv70YV5dWrE2CMJk+JCj8Pv6p6S95ZQS4BiL+UZwATi6Cft</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -75,7 +75,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -196,8 +196,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT Medal FROM Tmp
-WHERE Medal &lt;&gt; '';</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT Medal FROM Tmp;</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."

@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"regexp"
 
 	_ "github.com/denisenkom/go-mssqldb"
 	"github.com/gocarina/gocsv"
@@ -82,16 +83,25 @@ func main() {
 func InsertTmp(athlete *Athlete) (int64, error) {
 	ctx := context.Background()
 
+	if athlete.Rok == "1906" {
+		return 0, nil
+	}
+
 	if db == nil {
 		log.Fatal("Connection is not stable")
 	}
+
+	re_cudzyslow := regexp.MustCompile(`\s*".*"\s*`)
+	re_nawiasy := regexp.MustCompile(`\s*\([^()]*\)`)
+	res := re_cudzyslow.ReplaceAllString(athlete.Nazwa, " ")
+	res = re_nawiasy.ReplaceAllString(res, " ")
 
 	tsql := "INSERT INTO OlympicsDb..Tmp VALUES (@Id, @Nazwa, @Plec, @Wiek, @Wzrost, @Waga, @Druzyna, @Kod, @Zawody, @Rok, @Tryb, @Miasto, @Sport, @Wydarzenie, @Medal)"
 
 	result, err := db.ExecContext(
 		ctx, tsql,
 		sql.Named("Id", athlete.Id),
-		sql.Named("Nazwa", athlete.Nazwa),
+		sql.Named("Nazwa", res),
 		sql.Named("Plec", athlete.Plec),
 		sql.Named("Wiek", athlete.Wiek),
 		sql.Named("Wzrost", athlete.Wzrost),

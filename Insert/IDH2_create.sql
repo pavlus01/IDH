@@ -37,8 +37,8 @@ CREATE TABLE OlympicsDb..MedalT (
 CREATE TABLE OlympicsDb..Olimpiada (
     id int  NOT NULL,
     rok varchar(4)  NOT NULL,
-    miasto int  NOT NULL,
-    kraj int  NOT NULL,
+    miasto varchar(40)  NOT NULL,
+    kraj varchar(40)  NOT NULL,
     pora_roku varchar(10)  NOT NULL,
     CONSTRAINT Olimpiada_pk PRIMARY KEY (id)
 );
@@ -47,15 +47,15 @@ CREATE TABLE OlympicsDb..Olimpiada (
 CREATE TABLE OlympicsDb..OlimpiadaT (
     id int identity primary key,
     rok varchar(4)  NOT NULL,
-    miasto int  NOT NULL,
-    kraj int  NOT NULL,
+    miasto varchar(40)  NOT NULL,
+    kraj varchar(40)  NOT NULL,
     pora_roku varchar(10)  NOT NULL,
 );
 
 -- Table: Uczestnik_stale
 CREATE TABLE OlympicsDb..Uczestnik_stale (
     id int  NOT NULL,
-    imie_nazwisko int  NOT NULL,
+    imie_nazwisko varchar(120)  NOT NULL,
     plec varchar(1)  NOT NULL,
     CONSTRAINT Uczestnik_stale_pk PRIMARY KEY (id)
 );
@@ -63,7 +63,7 @@ CREATE TABLE OlympicsDb..Uczestnik_stale (
 -- Table: Uczestnik_staleT
 CREATE TABLE OlympicsDb..Uczestnik_staleT (
     id int identity primary key,
-    imie_nazwisko int  NOT NULL,
+    imie_nazwisko varchar(120) NOT NULL,
     plec varchar(1)  NOT NULL,
 );
 
@@ -92,7 +92,7 @@ CREATE TABLE OlympicsDb..Wystep_na_olimpiadzie (
     Zespol_id int  NOT NULL,
     Uczestnik_id int  NOT NULL,
     Uczestnik_zmienne_id int  NOT NULL,
-    CONSTRAINT Wystep_na_olimpiadzie_pk PRIMARY KEY (Dyscyplina_id,Medal_id,Oplimpiada_id,Zespol_id,Uczestnik_id)
+    CONSTRAINT Wystep_na_olimpiadzie_pk PRIMARY KEY (Dyscyplina_id,Medal_id,Oplimpiada_id,Zespol_id,Uczestnik_id,Uczestnik_zmienne_id)
 );
 
 -- Table: Wystep_na_olimpiadzieT
