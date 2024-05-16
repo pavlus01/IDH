@@ -9,7 +9,7 @@ GO
 CREATE TABLE OlympicsDb..Dyscyplina (
     id int  NOT NULL,
     sport varchar(100)  NOT NULL,
-    event varchar(150)  NOT NULL,
+    event varchar(100)  NOT NULL,
     CONSTRAINT Dyscyplina_pk PRIMARY KEY (id)
 );
 
@@ -17,20 +17,20 @@ CREATE TABLE OlympicsDb..Dyscyplina (
 CREATE TABLE OlympicsDb..DyscyplinaT (
     id int identity primary key,
     sport varchar(100)  NOT NULL,
-    event varchar(150)  NOT NULL,
+    event varchar(100)  NOT NULL,
 );
 
 -- Table: Medal
 CREATE TABLE OlympicsDb..Medal (
     id int  NOT NULL,
-    kolor varchar(10),
+    kolor varchar(20),
     CONSTRAINT Medal_pk PRIMARY KEY (id)
 );
 
 -- Table: MedalT
 CREATE TABLE OlympicsDb..MedalT (
     id int identity primary key,
-    kolor varchar(10),
+    kolor varchar(20),
 );
 
 -- Table: Olimpiada
@@ -39,7 +39,7 @@ CREATE TABLE OlympicsDb..Olimpiada (
     rok varchar(4)  NOT NULL,
     miasto varchar(40)  NOT NULL,
     kraj varchar(40)  NOT NULL,
-    pora_roku varchar(10)  NOT NULL,
+    pora_roku varchar(20)  NOT NULL,
     CONSTRAINT Olimpiada_pk PRIMARY KEY (id)
 );
 
@@ -49,13 +49,13 @@ CREATE TABLE OlympicsDb..OlimpiadaT (
     rok varchar(4)  NOT NULL,
     miasto varchar(40)  NOT NULL,
     kraj varchar(40)  NOT NULL,
-    pora_roku varchar(10)  NOT NULL,
+    pora_roku varchar(20)  NOT NULL,
 );
 
 -- Table: Uczestnik_stale
 CREATE TABLE OlympicsDb..Uczestnik_stale (
     id int  NOT NULL,
-    imie_nazwisko varchar(120)  NOT NULL,
+    imie_nazwisko varchar(110)  NOT NULL,
     plec varchar(1)  NOT NULL,
     CONSTRAINT Uczestnik_stale_pk PRIMARY KEY (id)
 );
@@ -64,7 +64,7 @@ CREATE TABLE OlympicsDb..Uczestnik_stale (
 CREATE TABLE OlympicsDb..Uczestnik_staleT (
     id int identity primary key,
     id_zaw int,
-    imie_nazwisko varchar(120) NOT NULL,
+    imie_nazwisko varchar(110) NOT NULL,
     plec varchar(1)  NOT NULL,
 );
 
@@ -110,7 +110,7 @@ CREATE TABLE OlympicsDb..Wystep_na_olimpiadzieT (
 -- Table: Zespol
 CREATE TABLE OlympicsDb..Zespol (
     id int  NOT NULL,
-    nazwa varchar(150)  NOT NULL,
+    nazwa varchar(60)  NOT NULL,
     skrot varchar(3)  NOT NULL,
     region varchar(100)  NOT NULL,
     CONSTRAINT Zespol_pk PRIMARY KEY (id)
@@ -119,7 +119,7 @@ CREATE TABLE OlympicsDb..Zespol (
 -- Table: ZespolT
 CREATE TABLE OlympicsDb..ZespolT (
     id int identity primary key,
-    nazwa varchar(150)  NOT NULL,
+    nazwa varchar(60)  NOT NULL,
     skrot varchar(3)  NOT NULL,
     region varchar(100)  NOT NULL,
 );
@@ -135,11 +135,11 @@ CREATE TABLE OlympicsDb..Tmp (
     waga int,
     druzyna varchar(60),
     druzyna_kod varchar(3),
-    zawody varchar(45),
+    zawody varchar(70),
     rok varchar(4),
     tryb varchar(20),
-    miasto varchar(30),
-    sport varchar(30),
+    miasto varchar(40),
+    sport varchar(100),
     wydarzenie varchar(100),
     medal varchar(20),
 );

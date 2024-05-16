@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/16/2024 9:23:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-GNIJC2A"
+  DTS:CreatorName="DESKTOP-GNIJC2A\PAWEL"
+  DTS:DTSID="{73C023A7-D236-45BD-ABC5-5FB4FE57B0C5}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{2BA8771A-16E0-4171-B3C2-C0BA6F55AAC1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CABF1C47-5E15-4AA8-B674-255C35ABC4B9}"
+      DTS:ObjectName="127.0.0.1,1433.OlympicsDb.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=127.0.0.1,1433;User ID=sa;Initial Catalog=OlympicsDb;Provider=MSOLEDBSQL.1;Application Name=SSIS-Package1-{CABF1C47-5E15-4AA8-B674-255C35ABC4B9}127.0.0.1,1433.OlympicsDb.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABspl75vR8zuT13Mu7+ecZM53YTDwETbvDEj1BYNi5gswAAAAAOgAAAAAIAACAAAADYJyp94Hni4jh+age9D8KxzEo6t2WFN/Zl9QJuwvNTRiAAAADqM/9NYfxdA7Vif1BEisRJ99jq3RMEfXw11fN9FP3cwkAAAAAsfnLa5bayWQA4WLKYt+NCEuiBkUd5i04PpJtJNbY1VVwAOj/Q73+Khjpq3V7hFZF4lSpxU9gPAca47+6Q8MUp</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{A933D0DD-F909-4BEF-92DE-9F3BB3A881DF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{CABF1C47-5E15-4AA8-B674-255C35ABC4B9}"
+          SQLTask:SqlStatementSource="ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_na_olimpiadzie_Uczestnik_zmienne;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_olimpiada_Dyscyplina;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_olimpiada_Medal;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_olimpiada_Oplimpiada;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_olimpiada_Uczestnik;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie DROP CONSTRAINT Wystep_olimpiada_Zespol;&#xA;&#xA;TRUNCATE TABLE OlympicsDb..Dyscyplina;&#xA;TRUNCATE TABLE OlympicsDb..Medal;&#xA;TRUNCATE TABLE OlympicsDb..Olimpiada;&#xA;TRUNCATE TABLE OlympicsDb..Uczestnik_stale;&#xA;TRUNCATE TABLE OlympicsDb..Uczestnik_zmienne;&#xA;TRUNCATE TABLE OlympicsDb..Zespol;&#xA;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_na_olimpiadzie_Uczestnik_zmienne&#xA;    FOREIGN KEY (Uczestnik_zmienne_id)&#xA;    REFERENCES Uczestnik_zmienne (id)  &#xA;;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_olimpiada_Dyscyplina&#xA;    FOREIGN KEY (Dyscyplina_id)&#xA;    REFERENCES Dyscyplina (id)  &#xA;;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_olimpiada_Medal&#xA;    FOREIGN KEY (Medal_id)&#xA;    REFERENCES Medal (id)  &#xA;;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_olimpiada_Oplimpiada&#xA;    FOREIGN KEY (Oplimpiada_id)&#xA;    REFERENCES Olimpiada (id)  &#xA;;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_olimpiada_Uczestnik&#xA;    FOREIGN KEY (Uczestnik_id)&#xA;    REFERENCES Uczestnik_stale (id)  &#xA;;&#xA;&#xA;ALTER TABLE OlympicsDb..Wystep_na_olimpiadzie ADD CONSTRAINT Wystep_olimpiada_Zespol&#xA;    FOREIGN KEY (Zespol_id)&#xA;    REFERENCES Zespol (id)  &#xA;;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="377,240" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

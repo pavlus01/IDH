@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ETL</Name>
-    <LastWriteTime>2024-05-16T16:36:33.5929515Z</LastWriteTime>
+    <LastWriteTime>2024-05-16T21:27:05.9836712Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -18,7 +18,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ZespolT.dtsx</Name>
-      <LastWriteTime>2024-05-15T14:04:51.7804898Z</LastWriteTime>
+      <LastWriteTime>2024-05-16T22:39:26.527998Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -32,13 +32,23 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Uczesnik_zmienne.dtsx</Name>
-      <LastWriteTime>2024-05-16T16:15:57.0054706Z</LastWriteTime>
+      <Name>Wystep_na_olimpiadzieT.dtsx</Name>
+      <LastWriteTime>2024-05-16T22:40:36.7454496Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Wystep_na_olimpiadzieT.dtsx</Name>
-      <LastWriteTime>2024-05-16T18:41:35.1133608Z</LastWriteTime>
+      <Name>LadowanieHurtowni.dtsx</Name>
+      <LastWriteTime>2024-05-16T21:14:22.4097552Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CzyszczenieHurtowni.dtsx</Name>
+      <LastWriteTime>2024-05-16T19:29:10.5669738Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Uczesnik_zmienneT.dtsx</Name>
+      <LastWriteTime>2024-05-16T16:15:57.0054706Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

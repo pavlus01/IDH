@@ -1,0 +1,3013 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/16/2024 9:02:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-GNIJC2A"
+  DTS:CreatorName="DESKTOP-GNIJC2A\PAWEL"
+  DTS:DTSID="{B25164C6-B0C6-402C-A156-3BF91C824ECD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5556.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="LadowanieHurtowni"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{3319CF17-DF1E-4EBF-8105-47F8497C4335}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{57387D98-8FD5-4011-854C-B05AF6FEE46E}"
+      DTS:ObjectName="127.0.0.1,1433.OlympicsDb.sa">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=127.0.0.1,1433;User ID=sa;Initial Catalog=OlympicsDb;Provider=MSOLEDBSQL.1;Application Name=SSIS-LadowanieHurtowni-{57387D98-8FD5-4011-854C-B05AF6FEE46E}127.0.0.1,1433.OlympicsDb.sa;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAdwXhhB9rmoi8R+Kik+2D7aTwflOriX8Qp779t5vjKWQAAAAAOgAAAAAIAACAAAAAZMpyZ/t50ir8cvkpwN54L+KdjF4gqzQiWkboiGmz81CAAAAATQRYs+xDpztZUJLWgSQMs3IKsuqPdyi9iZvqMcYop0UAAAABHh8y6p7rBknZCeHh2i8ORHgWn6s7C1lPTWDNXK9e7LZ8yLgbCn/Pl8asvWr/5KWKH4nTK2H84JxkChOzuDglk</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{3C4C059D-AB41-4116-BBF6-E87FE3F253FF}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Dyscyplina"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{0E000CE5-83E1-4AF3-90D9-FD1F3C803C44}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Dyscyplina"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Dyscyplina\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Dyscyplina]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[sport]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="sport"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sport]"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[sport]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[event]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="event"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[event]"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[event]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[sport]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="sport" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[event]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="event" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Dyscyplina\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[DyscyplinaT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[sport]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sport]"
+                          length="100"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[sport]"
+                          name="sport"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[event]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[event]"
+                          length="150"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].Columns[event]"
+                          name="event"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[sport]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="sport" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[event]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="event" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sport]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[sport]"
+                          name="sport" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[event]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[event]"
+                          name="event" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Dyscyplina.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Dyscyplina\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Dyscyplina\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Medal"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{97D8A911-0D85-4640-A036-3851B38516CF}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Medal"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Medal\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Medal]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Medal\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[kolor]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="kolor"
+                          externalMetadataColumnId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kolor]"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[kolor]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kolor]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="kolor" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Medal\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Medal\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[MedalT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Medal\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[kolor]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kolor]"
+                          length="10"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].Columns[kolor]"
+                          name="kolor"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kolor]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="kolor" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kolor]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kolor]"
+                          name="kolor" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Medal.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Medal\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Medal\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Olimpiada"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6F13C4F3-B476-46AC-BB4A-E20C8B3F3814}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Olimpiada"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Olimpiada\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Olimpiada]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[rok]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="4"
+                          cachedName="rok"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rok]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[rok]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[miasto]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="40"
+                          cachedName="miasto"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miasto]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[miasto]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[kraj]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="40"
+                          cachedName="kraj"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[kraj]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[pora_roku]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="pora_roku"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pora_roku]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[pora_roku]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rok]"
+                          codePage="1252"
+                          dataType="str"
+                          length="4"
+                          name="rok" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[miasto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          name="miasto" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[kraj]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          name="kraj" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[pora_roku]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="pora_roku" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Olimpiada\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[OlimpiadaT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[rok]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rok]"
+                          length="4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[rok]"
+                          name="rok"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[miasto]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[miasto]"
+                          length="40"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[miasto]"
+                          name="miasto"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[kraj]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kraj]"
+                          length="40"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[kraj]"
+                          name="kraj"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[pora_roku]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pora_roku]"
+                          length="10"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].Columns[pora_roku]"
+                          name="pora_roku"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[rok]"
+                          codePage="1252"
+                          dataType="str"
+                          length="4"
+                          name="rok" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[miasto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          name="miasto" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[kraj]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          name="kraj" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[pora_roku]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="pora_roku" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[rok]"
+                          codePage="1252"
+                          dataType="str"
+                          length="4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[rok]"
+                          name="rok" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[miasto]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[miasto]"
+                          name="miasto" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kraj]"
+                          codePage="1252"
+                          dataType="str"
+                          length="40"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[kraj]"
+                          name="kraj" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pora_roku]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[pora_roku]"
+                          name="pora_roku" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Olimpiada.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Olimpiada\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Olimpiada\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Uczestnik_stale"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{1588AE60-5E33-4C33-8251-0E440754C3DC}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Uczestnik_stale"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Uczestnik_stale]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[imie_nazwisko]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="120"
+                          cachedName="imie_nazwisko"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[imie_nazwisko]"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[imie_nazwisko]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[plec]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1"
+                          cachedName="plec"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[plec]"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[plec]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[imie_nazwisko]"
+                          codePage="1252"
+                          dataType="str"
+                          length="120"
+                          name="imie_nazwisko" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[plec]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="plec" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Uczestnik_staleT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[imie_nazwisko]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[imie_nazwisko]"
+                          length="120"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[imie_nazwisko]"
+                          name="imie_nazwisko"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[plec]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[plec]"
+                          length="1"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[plec]"
+                          name="plec"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_zaw]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_zaw]"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_zaw]"
+                          name="id_zaw"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[imie_nazwisko]"
+                          codePage="1252"
+                          dataType="str"
+                          length="120"
+                          name="imie_nazwisko" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[plec]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="plec" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_zaw]"
+                          dataType="i4"
+                          name="id_zaw" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[imie_nazwisko]"
+                          codePage="1252"
+                          dataType="str"
+                          length="120"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[imie_nazwisko]"
+                          name="imie_nazwisko" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[plec]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[plec]"
+                          name="plec" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_zaw]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_zaw]"
+                          name="id_zaw" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Uczestnik_stale.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Uczestnik_stale\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Uczestnik_stale\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Uczestnik_zmienne"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{8E0E62BB-A9C7-482F-8F70-9393B773C5AC}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Uczestnik_zmienne"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Uczestnik_zmienne]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[wiek]"
+                          cachedDataType="i4"
+                          cachedName="wiek"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wiek]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wiek]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[waga]"
+                          cachedDataType="i4"
+                          cachedName="waga"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[waga]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[waga]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[wzrost]"
+                          cachedDataType="i4"
+                          cachedName="wzrost"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wzrost]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wzrost]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wiek]"
+                          dataType="i4"
+                          name="wiek" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[waga]"
+                          dataType="i4"
+                          name="waga" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[wzrost]"
+                          dataType="i4"
+                          name="wzrost" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Uczestnik_zmienneT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wiek]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[wiek]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wiek]"
+                          name="wiek"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[waga]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[waga]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[waga]"
+                          name="waga"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wzrost]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[wzrost]"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].Columns[wzrost]"
+                          name="wzrost"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[wiek]"
+                          dataType="i4"
+                          name="wiek" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[waga]"
+                          dataType="i4"
+                          name="waga" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[wzrost]"
+                          dataType="i4"
+                          name="wzrost" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[wiek]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[wiek]"
+                          name="wiek" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[waga]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[waga]"
+                          name="waga" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[wzrost]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[wzrost]"
+                          name="wzrost" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Uczestnik_zmienne.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Zespol"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{533CDAE4-B2F2-4C0E-9663-3246DE37C176}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Zespol"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Zespol\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Zespol]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Zespol\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id]"
+                          cachedDataType="i4"
+                          cachedName="id"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[nazwa]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="150"
+                          cachedName="nazwa"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nazwa]"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[skrot]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="3"
+                          cachedName="skrot"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[skrot]"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[skrot]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[region]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="region"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[region]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[nazwa]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="nazwa" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[skrot]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="skrot" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="region" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Zespol\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Zespol\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[ZespolT]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Zespol\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[id]"
+                          name="id"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nazwa]"
+                          length="150"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]"
+                          name="nazwa"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[skrot]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[skrot]"
+                          length="3"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[skrot]"
+                          name="skrot"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[region]"
+                          length="100"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].Columns[region]"
+                          name="region"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id]"
+                          dataType="i4"
+                          name="id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[nazwa]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          name="nazwa" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[skrot]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          name="skrot" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="region" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id]"
+                          name="id" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nazwa]"
+                          codePage="1252"
+                          dataType="str"
+                          length="150"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nazwa]"
+                          name="nazwa" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[skrot]"
+                          codePage="1252"
+                          dataType="str"
+                          length="3"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[skrot]"
+                          name="skrot" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[region]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[region]"
+                          name="region" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Zespol.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Zespol\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Zespol\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Wystep_na_olimpiadzie"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D849A44C-9A34-4D09-BD48-3A83AC4237CE}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Wystep_na_olimpiadzie"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Wystep_na_olimpiadzie\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Wystep_na_olimpiadzie]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dyscyplina_id]"
+                      cachedDataType="i4"
+                      cachedName="Dyscyplina_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dyscyplina_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dyscyplina_id]" />
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Medal_id]"
+                      cachedDataType="i4"
+                      cachedName="Medal_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Medal_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Medal_id]" />
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Oplimpiada_id]"
+                      cachedDataType="i4"
+                      cachedName="Oplimpiada_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Oplimpiada_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Oplimpiada_id]" />
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Zespol_id]"
+                      cachedDataType="i4"
+                      cachedName="Zespol_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zespol_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zespol_id]" />
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Uczestnik_id]"
+                      cachedDataType="i4"
+                      cachedName="Uczestnik_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Uczestnik_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_id]" />
+                    <inputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Uczestnik_zmienne_id]"
+                      cachedDataType="i4"
+                      cachedName="Uczestnik_zmienne_id"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Uczestnik_zmienne_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_zmienne_id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dyscyplina_id]"
+                      dataType="i4"
+                      name="Dyscyplina_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Medal_id]"
+                      dataType="i4"
+                      name="Medal_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Oplimpiada_id]"
+                      dataType="i4"
+                      name="Oplimpiada_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Zespol_id]"
+                      dataType="i4"
+                      name="Zespol_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Uczestnik_id]"
+                      dataType="i4"
+                      name="Uczestnik_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Uczestnik_zmienne_id]"
+                      dataType="i4"
+                      name="Uczestnik_zmienne_id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Wystep_na_olimpiadzie\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Wystep_na_olimpiadzieT]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT  * From Wystep_na_olimpiadzieT;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                  connectionManagerRefId="Package.ConnectionManagers[127.0.0.1,1433.OlympicsDb.sa]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dyscyplina_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dyscyplina_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dyscyplina_id]"
+                      name="Dyscyplina_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Medal_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Medal_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Medal_id]"
+                      name="Medal_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Oplimpiada_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Oplimpiada_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Oplimpiada_id]"
+                      name="Oplimpiada_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zespol_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Zespol_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Zespol_id]"
+                      name="Zespol_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Uczestnik_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_id]"
+                      name="Uczestnik_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_zmienne_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Uczestnik_zmienne_id]"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].Columns[Uczestnik_zmienne_id]"
+                      name="Uczestnik_zmienne_id"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dyscyplina_id]"
+                      dataType="i4"
+                      name="Dyscyplina_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Medal_id]"
+                      dataType="i4"
+                      name="Medal_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Oplimpiada_id]"
+                      dataType="i4"
+                      name="Oplimpiada_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Zespol_id]"
+                      dataType="i4"
+                      name="Zespol_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Uczestnik_id]"
+                      dataType="i4"
+                      name="Uczestnik_id" />
+                    <externalMetadataColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Uczestnik_zmienne_id]"
+                      dataType="i4"
+                      name="Uczestnik_zmienne_id" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dyscyplina_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dyscyplina_id]"
+                      name="Dyscyplina_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Medal_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Medal_id]"
+                      name="Medal_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Oplimpiada_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Oplimpiada_id]"
+                      name="Oplimpiada_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Zespol_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Zespol_id]"
+                      name="Zespol_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Uczestnik_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Uczestnik_id]"
+                      name="Uczestnik_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Uczestnik_zmienne_id]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Uczestnik_zmienne_id]"
+                      name="Uczestnik_zmienne_id" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Wystep_na_olimpiadzie.Paths[OLE DB Source Output]"
+              endId="Package\Wystep_na_olimpiadzie\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Wystep_na_olimpiadzie\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{15F1A428-7DDC-4403-B31C-928789729B32}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Wystep_na_olimpiadzie" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="132,42"
+          Id="Package\Sequence Container\Dyscyplina"
+          TopLeft="19,15" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Sequence Container\Medal"
+          TopLeft="26,167" />
+        <NodeLayout
+          Size="129,42"
+          Id="Package\Sequence Container\Olimpiada"
+          TopLeft="357,26" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Sequence Container\Uczestnik_stale"
+          TopLeft="325,177" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Sequence Container\Uczestnik_zmienne"
+          TopLeft="34,87" />
+        <NodeLayout
+          Size="112,42"
+          Id="Package\Sequence Container\Zespol"
+          TopLeft="327,101" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="519,279"
+          Size="519,322"
+          Id="Package\Sequence Container"
+          TopLeft="104,64" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Wystep_na_olimpiadzie"
+          TopLeft="269,460" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="365,386">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,74"
+              Start="0,0"
+              End="0,66.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Dyscyplina">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Dyscyplina\OLE DB Source"
+          TopLeft="250,161" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Dyscyplina\OLE DB Destination"
+          TopLeft="254,273" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Dyscyplina.Paths[OLE DB Source Output]"
+          TopLeft="328.5,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="14,70"
+              Start="0,0"
+              End="14,62.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31"
+                    Point2="0,35"
+                    Point3="4,35" />
+                  <mssgle:LineSegment
+                    End="10,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="10,35"
+                    Point2="14,35"
+                    Point3="14,39" />
+                  <mssgle:LineSegment
+                    End="14,62.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Olimpiada">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Olimpiada\OLE DB Source"
+          TopLeft="291,156" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Olimpiada\OLE DB Destination"
+          TopLeft="308,297" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Olimpiada.Paths[OLE DB Source Output]"
+          TopLeft="369.5,198">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27,99"
+              Start="0,0"
+              End="27,91.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.5"
+                    Point2="0,49.5"
+                    Point3="4,49.5" />
+                  <mssgle:LineSegment
+                    End="23,49.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23,49.5"
+                    Point2="27,49.5"
+                    Point3="27,53.5" />
+                  <mssgle:LineSegment
+                    End="27,91.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Medal">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Medal\OLE DB Source"
+          TopLeft="250,178" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Medal\OLE DB Destination"
+          TopLeft="238,291" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Medal.Paths[OLE DB Source Output]"
+          TopLeft="327.5,220">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Uczestnik_zmienne">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source"
+          TopLeft="351,246" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination"
+          TopLeft="345,345" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Uczestnik_zmienne.Paths[OLE DB Source Output]"
+          TopLeft="431.5,288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Uczestnik_stale">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Uczestnik_stale\OLE DB Source"
+          TopLeft="172,246" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Uczestnik_stale\OLE DB Destination"
+          TopLeft="163,361" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Uczestnik_stale.Paths[OLE DB Source Output]"
+          TopLeft="251,288">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73"
+              Start="0,0"
+              End="0,65.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Dyscyplina\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Dyscyplina\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Medal\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Medal\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Olimpiada\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Olimpiada\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uczestnik_zmienne\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uczestnik_zmienne\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uczestnik_stale\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uczestnik_stale\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Wystep_na_olimpiadzie">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Wystep_na_olimpiadzie\OLE DB Source"
+          TopLeft="381,145" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Wystep_na_olimpiadzie\OLE DB Destination"
+          TopLeft="365,296" />
+        <EdgeLayout
+          Id="Package\Wystep_na_olimpiadzie.Paths[OLE DB Source Output]"
+          TopLeft="456.5,187">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,109"
+              Start="0,0"
+              End="0,101.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,101.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wystep_na_olimpiadzie\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Wystep_na_olimpiadzie\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Zespol">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Sequence Container\Zespol\OLE DB Source"
+          TopLeft="490,184" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Sequence Container\Zespol\OLE DB Destination"
+          TopLeft="486,332" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Zespol.Paths[OLE DB Source Output]"
+          TopLeft="571.5,226">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,106"
+              Start="0,0"
+              End="0,98.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,98.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Zespol\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Zespol\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
