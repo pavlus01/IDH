@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>ETL</Name>
-    <LastWriteTime>2024-05-16T16:15:57.5147486Z</LastWriteTime>
+    <LastWriteTime>2024-05-16T16:36:33.5929515Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>MedalT.dtsx</Name>
-      <LastWriteTime>2024-05-16T07:36:38.7686164Z</LastWriteTime>
+      <LastWriteTime>2024-05-16T16:36:33.4774122Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -28,12 +28,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Uczestnik_staleT.dtsx</Name>
-      <LastWriteTime>2024-05-16T15:44:05.9331118Z</LastWriteTime>
+      <LastWriteTime>2024-05-16T18:37:31.7958322Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Uczesnik_zmienne.dtsx</Name>
       <LastWriteTime>2024-05-16T16:15:57.0054706Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Wystep_na_olimpiadzieT.dtsx</Name>
+      <LastWriteTime>2024-05-16T18:41:35.1133608Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{8F11EA42-CB8D-43AE-9952-C4758DB26899}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{C2E4F367-08B3-41C4-BBBE-5601E29471F0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADSFo49hKySjUoL9NqVcgxK7Xqk9aCCp6XXxyIW/xQMKgAAAAAOgAAAAAIAACAAAAA6ET1kXZAMQB6ipBplp8HEapkrG1MJv0CY7LgjKVlF5CAAAACcGnthxVouwG722WrzrmQqUs8Cfgaz2TtDeSE+ADKV7UAAAAAzqQYkbraYnS8ckSVjbWhx3zKXqHOZEVVZHrlNB7JflENstfdb1voZll1+CurMbP12LX2cGmXu63/V4YMhR655</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAUjVUebxNifyaSAGVXAEiDQqnpbINxLQZ/gexY1L71tgAAAAAOgAAAAAIAACAAAADcQFLJP6UA576XS1qVclfZdieIrxT8WVh8tdyxkQBlRyAAAADuCEK7xtrgSXX0rpvsGh7S2EZ/cbkUaKMwn+cvORE5AkAAAACIvq1H/pIm4aU0vd6/ha0JwL5MS8VM4S51qjATvImo6tIUdapLv60lhjEQ7UnAQ0PKTYe2GqvJ8T1kWbsnkax3</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -138,6 +138,12 @@
                       cachedName="nazwa"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[imie_nazwisko]"
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[nazwa]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id_zawodnik]"
+                      cachedDataType="i4"
+                      cachedName="id_zawodnik"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_zaw]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_zawodnik]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -157,6 +163,12 @@
                       dataType="str"
                       length="1"
                       name="plec" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id_zaw]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="id_zaw" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -210,7 +222,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT nazwa, plec FROM tmp;</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT id_zawodnik, nazwa, plec FROM tmp;</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -268,6 +280,15 @@
                       lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[plec]"
                       name="plec"
                       truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_zawodnik]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_zawodnik]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[id_zawodnik]"
+                      name="id_zawodnik"
+                      truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -283,6 +304,10 @@
                       dataType="str"
                       length="1"
                       name="plec" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[id_zawodnik]"
+                      dataType="i4"
+                      name="id_zawodnik" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -290,6 +315,11 @@
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_zawodnik]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[id_zawodnik]"
+                      name="id_zawodnik" />
                     <outputColumn
                       refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[nazwa]"
                       codePage="1252"
@@ -373,13 +403,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="445,125" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
           TopLeft="456,321" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="445,125" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="531.75,167">
@@ -417,21 +447,21 @@
         <NodeLayout
           Size="177,42"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="380,274" />
+          TopLeft="380,271" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
           TopLeft="467,160">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,114"
+              EndConnector="0,111"
               Start="0,0"
-              End="0,106.5">
+              End="0,103.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,106.5" />
+                    End="0,103.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

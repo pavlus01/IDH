@@ -107,7 +107,7 @@ func InsertTmp(athlete *Athlete) (int64, error) {
 		sql.Named("Wzrost", athlete.Wzrost),
 		sql.Named("Waga", athlete.Waga),
 		sql.Named("Druzyna", athlete.Druzyna),
-		sql.Named("Kod", athlete.Kod),
+		sql.Named("Kod", CodeSwitch(athlete.Kod)),
 		sql.Named("Zawody", athlete.Zawody),
 		sql.Named("Rok", athlete.Rok),
 		sql.Named("Tryb", athlete.Tryb),
@@ -124,4 +124,17 @@ func InsertTmp(athlete *Athlete) (int64, error) {
 
 	return result.LastInsertId()
 
+}
+
+func CodeSwitch(code string) string {
+	switch code {
+	case "I":
+		return "INA"
+	case "SGP":
+		return "SIN"
+	case "M":
+		return "NAM"
+	default:
+		return code
+	}
 }

@@ -8,29 +8,29 @@ GO
 -- Table: Dyscyplina
 CREATE TABLE OlympicsDb..Dyscyplina (
     id int  NOT NULL,
-    sport varchar(10)  NOT NULL,
-    event varchar(15)  NOT NULL,
+    sport varchar(100)  NOT NULL,
+    event varchar(150)  NOT NULL,
     CONSTRAINT Dyscyplina_pk PRIMARY KEY (id)
 );
 
 -- Table: DyscyplinaT
 CREATE TABLE OlympicsDb..DyscyplinaT (
     id int identity primary key,
-    sport varchar(10)  NOT NULL,
-    event varchar(15)  NOT NULL,
+    sport varchar(100)  NOT NULL,
+    event varchar(150)  NOT NULL,
 );
 
 -- Table: Medal
 CREATE TABLE OlympicsDb..Medal (
     id int  NOT NULL,
-    kolor varchar(10)  NOT NULL,
+    kolor varchar(10),
     CONSTRAINT Medal_pk PRIMARY KEY (id)
 );
 
 -- Table: MedalT
 CREATE TABLE OlympicsDb..MedalT (
     id int identity primary key,
-    kolor varchar(10)  NOT NULL,
+    kolor varchar(10),
 );
 
 -- Table: Olimpiada
@@ -63,6 +63,7 @@ CREATE TABLE OlympicsDb..Uczestnik_stale (
 -- Table: Uczestnik_staleT
 CREATE TABLE OlympicsDb..Uczestnik_staleT (
     id int identity primary key,
+    id_zaw int,
     imie_nazwisko varchar(120) NOT NULL,
     plec varchar(1)  NOT NULL,
 );
@@ -70,18 +71,18 @@ CREATE TABLE OlympicsDb..Uczestnik_staleT (
 -- Table: Uczestnik_zmienne
 CREATE TABLE OlympicsDb..Uczestnik_zmienne (
     id int  NOT NULL,
-    wiek int  NOT NULL,
-    waga int  NOT NULL,
-    wzrost int  NOT NULL,
+    wiek int ,
+    waga int,
+    wzrost int,
     CONSTRAINT Uczestnik_zmienne_pk PRIMARY KEY (id)
 );
 
 -- Table: Uczestnik_zmienneT
 CREATE TABLE OlympicsDb..Uczestnik_zmienneT (
     id int identity primary key,
-    wiek int  NOT NULL,
-    waga int  NOT NULL,
-    wzrost int  NOT NULL,
+    wiek int,
+    waga int,
+    wzrost int,
 );
 
 -- Table: Wystep_na_olimpiadzie
@@ -97,29 +98,30 @@ CREATE TABLE OlympicsDb..Wystep_na_olimpiadzie (
 
 -- Table: Wystep_na_olimpiadzieT
 CREATE TABLE OlympicsDb..Wystep_na_olimpiadzieT (
-    Dyscyplina_id int identity primary key,
+    Dyscyplina_id int,
     Medal_id int  NOT NULL,
     Oplimpiada_id int  NOT NULL,
     Zespol_id int  NOT NULL,
     Uczestnik_id int  NOT NULL,
     Uczestnik_zmienne_id int  NOT NULL,
+    CONSTRAINT Wystep_na_olimpiadzieT_pk PRIMARY KEY (Dyscyplina_id,Medal_id,Oplimpiada_id,Zespol_id,Uczestnik_id,Uczestnik_zmienne_id)
 );
 
 -- Table: Zespol
 CREATE TABLE OlympicsDb..Zespol (
     id int  NOT NULL,
-    nazwa varchar(15)  NOT NULL,
+    nazwa varchar(150)  NOT NULL,
     skrot varchar(3)  NOT NULL,
-    region varchar(10)  NOT NULL,
+    region varchar(100)  NOT NULL,
     CONSTRAINT Zespol_pk PRIMARY KEY (id)
 );
 
 -- Table: ZespolT
 CREATE TABLE OlympicsDb..ZespolT (
     id int identity primary key,
-    nazwa varchar(15)  NOT NULL,
+    nazwa varchar(150)  NOT NULL,
     skrot varchar(3)  NOT NULL,
-    region varchar(10)  NOT NULL,
+    region varchar(100)  NOT NULL,
 );
 
 -- Table: Tmp
