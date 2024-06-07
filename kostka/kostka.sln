@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "kostka", "kostka\kostka.dwproj", "{D238ED09-C92D-4DB3-881E-881FB2DBB188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D238ED09-C92D-4DB3-881E-881FB2DBB188}.Development|Default.ActiveCfg = Development
+		{D238ED09-C92D-4DB3-881E-881FB2DBB188}.Development|Default.Build.0 = Development
+		{D238ED09-C92D-4DB3-881E-881FB2DBB188}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {005B058E-F5C0-4B83-B65D-FED53FB20459}
+	EndGlobalSection
+EndGlobal

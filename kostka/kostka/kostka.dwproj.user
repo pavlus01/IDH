@@ -1,0 +1,39 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>Olympics Db</Id>
+            <Name>Olympics Db</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAAJyHgotvkSkbTsDAHJCMfZURuSWgidqeQVxzDZjTM730AAAAADoAAAAACAAAgAAAArXIzZtANgIKr61FSOFj6TfX2677b2yX78IqZb0LEOfcQAAAAQvFSd3tZV/gxNf1dYhCmY0AAAABghsF71YMdaIE/THgbywLCVO9eDVqqyqiB55lUJ0eAQ154RE5bfaReFtmTMgZ7wYVgK10BkIrpTOVegEH591tP</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Olympics Db 1</Id>
+            <Name>Olympics Db 1</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAcAAAATwBsAHkAbQBwAGkAYwBzACAARABiACAAMQAAABBmAAAAAQAAIAAAAGxEgmCxiArP0pksheErF1FlQGNI5uDsrL8bY1/e802WAAAAAA6AAAAAAgAAIAAAACMc3//AgPKUDott9WzTAOYlSxMvHHMuULMjuV4ZznUjEAAAAIjpHvY4xRIXwCiuL57DdX1AAAAAo+NbDtFCjQwlE8hxi04hxmUsSBroS5NiPcuejwPos55wTz32EaJYOYOZmXgTTRBJKx1Ae2lhjQUk9xnunhk8Yg==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>Olympics Db</Id>
+            <Name>Olympics Db</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAA8V7f5uHPgg5CNvGUYSgC9xxuOqzG3i2R95DkVfLd9egAAAAADoAAAAACAAAgAAAApMisce8efNHPe09f950jQSLyNRea8sbcJSZbCy0hfIogAAAARstdIW+JlePnlmzHqCVUSsjc5VX45vlOwPWdDzp8pQtAAAAAv3yfPj+FHBfTyJyTzAud5DP2R3zymAXvISoPH/3aMBRQqHiOWcW+MCT+MdE8DWNboH3taAjiSvJiK/w2MhsaEw==</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Olympics Db 1</Id>
+            <Name>Olympics Db 1</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAcAAAATwBsAHkAbQBwAGkAYwBzACAARABiACAAMQAAABBmAAAAAQAAIAAAAJfqLlTKT+piWzVbqJfFkHOqFfYnxOsyiYCj1BFJ3ze2AAAAAA6AAAAAAgAAIAAAAFfDO2GCKEvJh3jxj+wSxqaFexlvpc5sBWGwEqGxcmcuIAAAAEhNMzBF9u8FiaOVmtJ8ucGPBi40A1w1NToe52THt8IlQAAAAIJaG6tPMUA7ndS93rIeRxylJ/LJ5ETDTOsnz4UXtE/r9Njzd7SFAJ4/szC0pU1spXaElYJEGOOdbflXRMClrK0=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>LAPTOP-MR488UU0</TargetServer>
+        <TargetDatabase>kostka</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

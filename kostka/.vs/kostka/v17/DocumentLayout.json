@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Olimpiada.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Olimpiada.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Stale.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Uczestnik Stale.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Zmienne.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Uczestnik Zmienne.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Medal.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Medal.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Zespol.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Zespol.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Dyscyplina.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Dyscyplina.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\DataSourceView.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\DataSourceView.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Cube.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML",
+      "RelativeMoniker": "D:0:0:{D238ED09-C92D-4DB3-881E-881FB2DBB188}|kostka\\kostka.dwproj|solutionrelative:kostka\\Role.role||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|XML"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Uczestnik Zmienne.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Zmienne.dim",
+              "RelativeDocumentMoniker": "kostka\\Uczestnik Zmienne.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Zmienne.dim [Design]",
+              "RelativeToolTip": "kostka\\Uczestnik Zmienne.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:49:05.692Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Uczestnik Stale.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Stale.dim",
+              "RelativeDocumentMoniker": "kostka\\Uczestnik Stale.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Uczestnik Stale.dim [Design]",
+              "RelativeToolTip": "kostka\\Uczestnik Stale.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:50:14.231Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Olimpiada.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Olimpiada.dim",
+              "RelativeDocumentMoniker": "kostka\\Olimpiada.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Olimpiada.dim [Design]",
+              "RelativeToolTip": "kostka\\Olimpiada.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-07T10:42:49.805Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Medal.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Medal.dim",
+              "RelativeDocumentMoniker": "kostka\\Medal.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Medal.dim [Design]",
+              "RelativeToolTip": "kostka\\Medal.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:39:28.986Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Zespol.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Zespol.dim",
+              "RelativeDocumentMoniker": "kostka\\Zespol.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Zespol.dim [Design]",
+              "RelativeToolTip": "kostka\\Zespol.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:45:14.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dyscyplina.dim [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Dyscyplina.dim",
+              "RelativeDocumentMoniker": "kostka\\Dyscyplina.dim",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Dyscyplina.dim [Design]",
+              "RelativeToolTip": "kostka\\Dyscyplina.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:48:00.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataSourceView.dsv [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\DataSourceView.dsv",
+              "RelativeDocumentMoniker": "kostka\\DataSourceView.dsv",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\DataSourceView.dsv [Design]",
+              "RelativeToolTip": "kostka\\DataSourceView.dsv [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:29:29.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cube.cube [Design]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Cube.cube",
+              "RelativeDocumentMoniker": "kostka\\Cube.cube",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Cube.cube [Design]",
+              "RelativeToolTip": "kostka\\Cube.cube [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T14:57:00.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.role [XML]",
+              "DocumentMoniker": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Role.role",
+              "RelativeDocumentMoniker": "kostka\\Role.role",
+              "ToolTip": "C:\\Users\\tleks\\Documents\\PJATK\\sem1\\IDH\\projekt\\project1\\kostka\\kostka\\Role.role [XML]",
+              "RelativeToolTip": "kostka\\Role.role [XML]",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-06-06T15:02:58.185Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
