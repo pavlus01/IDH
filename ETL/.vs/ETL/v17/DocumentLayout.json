@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\MedalT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\MedalT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\LadowanieHurtowni.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\LadowanieHurtowni.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\DyscyplinaT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\DyscyplinaT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\ZespolT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\ZespolT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczestnik_staleT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\Uczestnik_staleT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczesnik_zmienneT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\Uczesnik_zmienneT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\OlimpiadaT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\OlimpiadaT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\CzyszczenieHurtowni.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\CzyszczenieHurtowni.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Wystep_na_olimpiadzieT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design",
+      "RelativeMoniker": "D:0:0:{6A761415-39C8-432A-9084-6EB29DAA488F}|ETL\\ETL.dtproj|solutionrelative:ETL\\Wystep_na_olimpiadzieT.dtsx||{CC84AFBD-DA02-46F4-8623-9F07E5569EDB}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MedalT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\MedalT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\MedalT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\MedalT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\MedalT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:23.157Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DyscyplinaT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\DyscyplinaT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\DyscyplinaT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\DyscyplinaT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\DyscyplinaT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:18:48.439Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LadowanieHurtowni.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\LadowanieHurtowni.dtsx",
+              "RelativeDocumentMoniker": "ETL\\LadowanieHurtowni.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\LadowanieHurtowni.dtsx [Design]",
+              "RelativeToolTip": "ETL\\LadowanieHurtowni.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:19.854Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OlimpiadaT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\OlimpiadaT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\OlimpiadaT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\OlimpiadaT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\OlimpiadaT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:25.101Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Uczesnik_zmienneT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczesnik_zmienneT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\Uczesnik_zmienneT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczesnik_zmienneT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\Uczesnik_zmienneT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:25.987Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Uczestnik_staleT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczestnik_staleT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\Uczestnik_staleT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Uczestnik_staleT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\Uczestnik_staleT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:29.481Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ZespolT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\ZespolT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\ZespolT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\ZespolT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\ZespolT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:39.452Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CzyszczenieHurtowni.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\CzyszczenieHurtowni.dtsx",
+              "RelativeDocumentMoniker": "ETL\\CzyszczenieHurtowni.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\CzyszczenieHurtowni.dtsx [Design]",
+              "RelativeToolTip": "ETL\\CzyszczenieHurtowni.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-08T10:14:52.571Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Wystep_na_olimpiadzieT.dtsx [Design]",
+              "DocumentMoniker": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Wystep_na_olimpiadzieT.dtsx",
+              "RelativeDocumentMoniker": "ETL\\Wystep_na_olimpiadzieT.dtsx",
+              "ToolTip": "C:\\Users\\PAWEL\\Desktop\\IDH\\ETL\\ETL\\Wystep_na_olimpiadzieT.dtsx [Design]",
+              "RelativeToolTip": "ETL\\Wystep_na_olimpiadzieT.dtsx [Design]",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFTSURBVDhPY2QAgqUbD/8H0bjAu49fGG7fvZ8\u002BqTFrFlQIAv7/h\u002BgDGfDv71\u002BcePKi7f9NPZP/59VPSwNrQAJMUJogaK0pZDh\u002B6uxMdEOINqC6pR9MgwwBM6CABUqDQcWCa1AWA0NHghac//k9G0NcZAiYvWj5GjANAxgu\u002BC2rAcYwAGJz6NkxZEe7QUVQAYYBrI9vgDEMwPhffkEFsAFCsfDp\u002B9//D98jYgOqDQwIBiLI5vc/GBjefP/PwMLGARVFABQDQIEGwyCArPnNdwaGf1iSG85ARNb8\u002BhsDwweQAb\u002BBAmgAZyAia371lYHh7MnrDI9/yzA4hhQwlM29/J/BeCbYPSjpABT3MJvf//jP8BZoK4j95TfE7SD5hy\u002B\u002BMFy5846hCyyCZMDUpbugLFxABq75zPU3UDGoAaDchp7C0AHI6TDNyAaAszNRAOpnFHA2nREAjMTvHMVXB8cAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-06-04T19:19:29.829Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

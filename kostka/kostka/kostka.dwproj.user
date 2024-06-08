@@ -7,7 +7,7 @@
           <ConfigurationSetting>
             <Id>Olympics Db</Id>
             <Name>Olympics Db</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAAJyHgotvkSkbTsDAHJCMfZURuSWgidqeQVxzDZjTM730AAAAADoAAAAACAAAgAAAArXIzZtANgIKr61FSOFj6TfX2677b2yX78IqZb0LEOfcQAAAAQvFSd3tZV/gxNf1dYhCmY0AAAABghsF71YMdaIE/THgbywLCVO9eDVqqyqiB55lUJ0eAQ154RE5bfaReFtmTMgZ7wYVgK10BkIrpTOVegEH591tP</Value>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAA7FoMSHZ0eRkb/OSzfsyCUinZjml+xs0sROTxOzk/hbYAAAAADoAAAAACAAAgAAAARpQSVNojWxDVVgTcq3KSyTgt9G8ePwVgv3+HUdXE1ZEQAAAAqiyFo89lg/mULvyklsHgjkAAAAAfF37tcqXjnwAm/olb63bzpHY3xab02KLj1px44M7sKxVhCoeM7jTk3FsRk7JGmcix4qZEzH2OVva5UFiQE4zm</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>Olympics Db 1</Id>
@@ -19,7 +19,7 @@
           <ConfigurationSetting>
             <Id>Olympics Db</Id>
             <Name>Olympics Db</Name>
-            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAA8V7f5uHPgg5CNvGUYSgC9xxuOqzG3i2R95DkVfLd9egAAAAADoAAAAACAAAgAAAApMisce8efNHPe09f950jQSLyNRea8sbcJSZbCy0hfIogAAAARstdIW+JlePnlmzHqCVUSsjc5VX45vlOwPWdDzp8pQtAAAAAv3yfPj+FHBfTyJyTzAud5DP2R3zymAXvISoPH/3aMBRQqHiOWcW+MCT+MdE8DWNboH3taAjiSvJiK/w2MhsaEw==</Value>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAYAAAATwBsAHkAbQBwAGkAYwBzACAARABiAAAAEGYAAAABAAAgAAAAelbpnr/4NRLkfN9FDkraWteRMc4vKML9kkSbu4qnDIoAAAAADoAAAAACAAAgAAAA8Cs92wIwGm+6blPrNkEl7vrysp6cUpGDYrUK2CcadncgAAAARbLtgTMa/Gp/j86jhT/VuJh1GTf1WzffDebsyw/JAt5AAAAAYsVoBEn7opUpQydxlg6zjQpOMwyrt62PIOWQiQZ1HmqGkHtYVbfsUZq+tkk/qTYFXFIu61EZtvggfMx8ZHobiw==</Value>
           </ConfigurationSetting>
           <ConfigurationSetting>
             <Id>Olympics Db 1</Id>
@@ -27,7 +27,7 @@
             <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA9MZuTbVXXUOkY4qYEeV91AAAAAAcAAAATwBsAHkAbQBwAGkAYwBzACAARABiACAAMQAAABBmAAAAAQAAIAAAAJfqLlTKT+piWzVbqJfFkHOqFfYnxOsyiYCj1BFJ3ze2AAAAAA6AAAAAAgAAIAAAAFfDO2GCKEvJh3jxj+wSxqaFexlvpc5sBWGwEqGxcmcuIAAAAEhNMzBF9u8FiaOVmtJ8ucGPBi40A1w1NToe52THt8IlQAAAAIJaG6tPMUA7ndS93rIeRxylJ/LJ5ETDTOsnz4UXtE/r9Njzd7SFAJ4/szC0pU1spXaElYJEGOOdbflXRMClrK0=</Value>
           </ConfigurationSetting>
         </UserPasswords>
-        <TargetServer>LAPTOP-MR488UU0</TargetServer>
+        <TargetServer>DESKTOP-GNIJC2A\DB2</TargetServer>
         <TargetDatabase>kostka</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

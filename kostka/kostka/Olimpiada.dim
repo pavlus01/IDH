@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6cdf6277-7d6e-4a31-8090-744476682a06" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2667668b-3c84-4476-97a8-eb70ff8449c3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Olimpiada</ID>
   <Name>Olimpiada</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1267" scrolltop="-4939" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5574" y="12471" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3203" scrolltop="-4670" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9446" y="12488" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01ee0000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Olimpiada" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Olimpiada" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000210a0000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-1267</Value>
+      <Value>-3203</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-4939</Value>
+      <Value>-4670</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -69,7 +69,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
       <Value>
         <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
-          <Shapes NodeWidth="118">
+          <Shapes NodeWidth="89">
             <Shape Id="Id" Expanded="false">
               <Attributes>
                 <Attribute Id="Id" />
@@ -82,13 +82,13 @@
               <Attributes>
                 <Attribute Id="Pora Roku" />
               </Attributes>
-              <Position x="172" y="20" />
+              <Position x="136" y="20" />
             </Shape>
             <Shape Id="Rok" Expanded="false">
               <Attributes>
                 <Attribute Id="Rok" />
               </Attributes>
-              <Position x="325" y="20" />
+              <Position x="252" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -97,41 +97,40 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="4769c543-d689-4f2c-914f-529f28e9eb19">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="256827e4-3af5-4e78-bf2c-de2a736038ea">
     <DataSourceViewID>DataSourceView</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="968f42db-4a93-468d-a1b5-b6777986bb5f">
+  <ErrorConfiguration dwd:design-time-name="70881f98-f3e2-44f0-b983-dfe550c711a8">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="2b2fd4b0-c36f-448b-af11-1cc7f94f420b">
+    <Attribute dwd:design-time-name="4f4b6e5b-2d20-4e29-87cd-e4f05cd3b014">
       <ID>Id</ID>
       <Name>Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="12b03e3c-492c-4f43-a792-3520a2987d0e">
+        <KeyColumn dwd:design-time-name="b0721d8c-82e2-4048-b8ee-0b52b60ca236">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c9686925-848a-4287-859b-26929e674946">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b569d08f-332e-4adf-82b7-ae84be6e1fc7">
             <TableID>dbo_Olimpiada</TableID>
             <ColumnID>id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="db7262d4-0cb4-4b54-8076-37afcd50c87b">
+        <AttributeRelationship dwd:design-time-name="b6dad708-c102-4dbd-9285-28e12947c703">
           <AttributeID>Miasto</AttributeID>
           <Name>Miasto</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1e371e3e-9a7f-4d60-9a03-bbb4f7419db6">
+        <AttributeRelationship dwd:design-time-name="7aa89d85-6a4f-4aaf-ae16-461cc0aadf95">
           <AttributeID>Kraj</AttributeID>
           <Name>Kraj</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="09a2d1ec-d9c2-4d42-a56e-c0d502443360">
+        <AttributeRelationship dwd:design-time-name="50da597d-9803-472c-92ef-1fdc5b4926d0">
           <AttributeID>Pora Roku</AttributeID>
-          <RelationshipType>Rigid</RelationshipType>
           <Name>Pora Roku</Name>
         </AttributeRelationship>
       </AttributeRelationships>
@@ -139,93 +138,105 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="93744481-fbe0-4da8-ad8b-d3b606ace716">
+    <Attribute dwd:design-time-name="7528368c-cbad-4cc3-98b4-7a6352ed1f70">
       <ID>Rok</ID>
       <Name>Rok</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="21bc76d1-919b-4a4f-8f00-1697633304b7">
+        <KeyColumn dwd:design-time-name="a1d9907b-802d-43ce-b49e-592320905205">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="747fab72-c703-42c1-a25b-ed276bc67768">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b153a6d-4f93-4b0a-b9c4-7902e9fabc41">
             <TableID>dbo_Olimpiada</TableID>
             <ColumnID>rok</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="aa106cef-e30d-4f59-be90-2851396ebfe9">
+    <Attribute dwd:design-time-name="502b0566-dde4-402a-825d-60256cb8d52a">
       <ID>Miasto</ID>
       <Name>Miasto</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8d9bcb51-f28a-41c6-bf4b-82c83b1369c8">
+        <KeyColumn dwd:design-time-name="c654b1d1-9663-485d-b143-98d53a3b1374">
           <DataType>WChar</DataType>
           <DataSize>40</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a5ec6f-0475-4a44-ac18-6fa552dfc0bd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec15435f-b1df-4ff9-a66b-7ecd78860987">
             <TableID>dbo_Olimpiada</TableID>
             <ColumnID>miasto</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c6d4124f-8222-401b-b176-7b551bef6e06">
+    <Attribute dwd:design-time-name="590eb909-2e05-4eb5-9227-3464a0cb1550">
       <ID>Kraj</ID>
       <Name>Kraj</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="72d16ece-bccd-4a01-b345-c85baf86308e">
+        <KeyColumn dwd:design-time-name="a07ceef3-3b29-4026-9f37-c2366677c549">
           <DataType>WChar</DataType>
           <DataSize>40</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="433bc061-a672-4b26-af8a-c23d4bb521f6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6c2dee6-b094-461b-9452-3acdabb308ea">
             <TableID>dbo_Olimpiada</TableID>
             <ColumnID>kraj</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6b7b1dff-9527-4188-8def-8ca97d78c1e6">
+    <Attribute dwd:design-time-name="528aa77c-16fe-433c-ba1a-25326234bd10">
       <ID>Pora Roku</ID>
       <Name>Pora Roku</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="13c8e983-b269-4509-afd7-ecab873e4170">
+        <KeyColumn dwd:design-time-name="4f6b3435-727b-4120-96a1-3822b6b41515">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff088469-1878-4ee9-9d34-4e69b16696d3">
+            <TableID>dbo_Olimpiada</TableID>
+            <ColumnID>rok</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2fd0d8e5-c71e-4c11-b209-49cf43af4a58">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eb58f3bb-cf83-4f11-97aa-897508608c62">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6c73ddb3-2491-42d4-bf75-02d2577484e4">
             <TableID>dbo_Olimpiada</TableID>
             <ColumnID>pora_roku</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="d223463c-ceb2-4ef6-87c9-d1b53721bcef">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d42a96e7-972d-43ba-979d-7c552dd16dd7">
+          <TableID>dbo_Olimpiada</TableID>
+          <ColumnID>pora_roku</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="bb36d2f5-db7f-4a24-a893-c6a2fa63084f">
+        <AttributeRelationship dwd:design-time-name="e9d1d82e-5814-4438-bcf7-b2dc177c3bce">
           <AttributeID>Rok</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Rok</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="4fd3ba96-184e-4547-a962-540ff97bb8b0">
+    <Hierarchy dwd:design-time-name="8b9916b9-ede1-4a81-9d7d-fe3441725458">
       <ID>Hierarchy</ID>
-      <Name>Hierarchia_olimpiada</Name>
+      <Name>Hierarchy-czas</Name>
       <Levels>
-        <Level dwd:design-time-name="de6f42f0-08f9-4208-9681-ea3859b716fd">
+        <Level dwd:design-time-name="fe2ec786-0c52-42e8-88cf-e660a549c3ab">
           <ID>Rok</ID>
           <Name>Rok</Name>
           <SourceAttributeID>Rok</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="18551671-34eb-48e2-8ef5-c14bf1cb085f">
+        <Level dwd:design-time-name="59947ad4-bafd-4219-8c41-c59d208903a6">
           <ID>Pora Roku</ID>
           <Name>Pora Roku</Name>
           <SourceAttributeID>Pora Roku</SourceAttributeID>

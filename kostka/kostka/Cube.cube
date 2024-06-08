@@ -1,6 +1,6 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b6c8a1ea-01d0-4e25-9c70-b4cdf87712d3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Cube</ID>
-  <Name>Cube</Name>
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b3c7ce14-bad8-40c3-b4dc-62778a65f15d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>cube</ID>
+  <Name>cube</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -8,9 +8,9 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-15" scrolltop="-1291" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="80" x="12330" y="12471" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8972" scrolltop="44" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="79" x="26379" y="12488" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
-              <ddsxmlobjectstreamwrapper binary="01ee0000900180380100065461686f6d61" />
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
             </font>
             <mouseicon>
               <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Medal" left="11789" top="2496" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Medal" left="8631" top="12601" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -30,42 +30,9 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Wystep_na_olimpiadzie" left="5420" top="4287" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3969" height="2946" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dyscyplina" left="5931" top="0" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000810f0000820b0000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Wystep_na_olimpiadzie" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Uczestnik_zmienne" left="3205" top="11424" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="2240" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c0080000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Uczestnik_zmienne" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Zespol" left="20" top="4640" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2240" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c0080000" />
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_Zespol" vartype="8" />
-              </ddsxmlobj>
-            </layoutobject>
-            <shape groupshapeid="0" groupnode="0" />
-          </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Dyscyplina" left="5904" top="0" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00005f070000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -74,9 +41,42 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Olimpiada" left="11789" top="6431" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Wystep_na_olimpiadzie" left="5420" top="4702" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4022" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000210a0000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Wystep_na_olimpiadzie" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Zespol" left="3231" top="12601" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Zespol" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Uczestnik_zmienne" left="11842" top="2775" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2725" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a50a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Uczestnik_zmienne" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Olimpiada" left="20" top="4913" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00004d0c0000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -85,9 +85,9 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Uczestnik_stale" left="8605" top="11424" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="1887" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Uczestnik_stale" left="11842" top="7900" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3016" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00005f070000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000c80b0000fe080000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -96,7 +96,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9089" top="2864" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2096" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7681" top="7974" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="2850" height="5127" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -109,72 +109,14 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="12" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="11789" y="3263" />
-              <point x="10589" y="3263" />
-              <point x="10589" y="4660" />
-              <point x="9389" y="4660" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="3" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10131" y="12601" />
+              <point x="10131" y="10438" />
+              <point x="7981" y="10438" />
+              <point x="7981" y="8274" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="5361" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[Wystep_olimpiada_Zespol]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="2" sourceattachpoint="13" destattachpoint="18" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="3020" y="5760" />
-              <point x="5420" y="5760" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9089" top="6010" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="2117" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[Wystep_olimpiada_Oplimpiada]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="2" sourceattachpoint="14" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="11789" y="7727" />
-              <point x="10589" y="7727" />
-              <point x="10589" y="6310" />
-              <point x="9389" y="6310" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4306" top="6933" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="2298" height="4991" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-            <control>
-              <ddsxmlobj>
-                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-              </ddsxmlobj>
-            </control>
-            <layoutobject>
-              <ddsxmlobj>
-                <property name="LogicalObject" value="dataSet.Relations[Wystep_na_olimpiadzie_Uczestnik_zmienne]" vartype="8" />
-                <property name="Virtual" value="0" vartype="11" />
-                <property name="VisibleAP" value="0" vartype="3" />
-              </ddsxmlobj>
-            </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="2" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="4705" y="11424" />
-              <point x="4705" y="9329" />
-              <point x="6304" y="9329" />
-              <point x="6304" y="7233" />
-            </connector>
-          </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7005" top="1388" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7032" top="1803" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -187,12 +129,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="7404" y="1887" />
-              <point x="7404" y="4287" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7431" y="2302" />
+              <point x="7431" y="4702" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7654" top="6933" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="2851" height="4991" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9142" top="6738" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="2713" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -205,11 +147,71 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="2" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="10105" y="11424" />
-              <point x="10105" y="9329" />
-              <point x="7954" y="9329" />
-              <point x="7954" y="7233" />
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="3" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11842" y="9051" />
+              <point x="10642" y="9051" />
+              <point x="10642" y="7038" />
+              <point x="9442" y="7038" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9142" top="3738" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="1950" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Wystep_na_olimpiadzie_Uczestnik_zmienne]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11842" y="4137" />
+              <point x="10642" y="4137" />
+              <point x="10642" y="5388" />
+              <point x="9442" y="5388" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2720" top="6088" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Wystep_olimpiada_Oplimpiada]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="15" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="6487" />
+              <point x="4220" y="6487" />
+              <point x="4220" y="6488" />
+              <point x="5420" y="6488" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4332" top="7974" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="2299" height="5127" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Wystep_olimpiada_Zespol]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4731" y="12601" />
+              <point x="4731" y="10438" />
+              <point x="6331" y="10438" />
+              <point x="6331" y="8274" />
             </connector>
           </ddscontrol>
         </dds>
@@ -229,11 +231,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-15</Value>
+      <Value>-8972</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-1291</Value>
+      <Value>44</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -245,86 +247,125 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
-      <Value>80</Value>
+      <Value>79</Value>
     </Annotation>
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="0028e7a4-81fd-4b7b-b3a1-fa1d2f017b92">
-      <ID>Zespol</ID>
-      <Name>Zespol</Name>
-      <DimensionID>Zespol</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="1f8d4f23-2e7a-4a3d-ac68-810262b37b97">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="91c5fd65-6508-4423-9b95-588bea4484d3">
-          <AttributeID>Skrot</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="e5a1e1d9-75f1-480f-b34d-674b68a0812b">
-          <AttributeID>Region</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="cd1655aa-6f0f-4d83-9950-e82a0167b20e">
-      <ID>Medal</ID>
-      <Name>Medal</Name>
-      <DimensionID>Medal</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="051c0bb9-ce16-4823-84a0-8b1bd15ffd08">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="a0803b82-630f-46aa-b48b-17c869b1aadd">
-      <ID>Uczestnik Zmienne</ID>
-      <Name>Uczestnik Zmienne</Name>
-      <DimensionID>Uczestnik Zmienne</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="4df55e8e-ba5d-42f3-b119-71284a840fc1">
-          <AttributeID>Id</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="a868de79-ae05-4291-b2c3-926dd8ed9749">
-          <AttributeID>Wiek</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="3a346c52-124f-4b62-9b10-4b9612ffaa1a">
-          <AttributeID>Waga</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="bafd5449-b41d-4500-9524-92341af4a989">
-          <AttributeID>Wzrost</AttributeID>
-        </Attribute>
-      </Attributes>
-    </Dimension>
-    <Dimension dwd:design-time-name="960576d5-e2d3-480e-8c18-5bafc6b98ebd">
+    <Dimension dwd:design-time-name="ba270f09-7372-468c-be0d-ef58b41d2284">
       <ID>Dyscyplina</ID>
       <Name>Dyscyplina</Name>
       <DimensionID>Dyscyplina</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="43af461f-ec0e-45ec-9ee2-db908c09434c">
+        <Attribute dwd:design-time-name="fa9ab19d-67e6-4412-8973-09a77a429a41">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="113b6951-f597-4b69-bec3-30525fc4e824">
+        <Attribute dwd:design-time-name="f0ee227e-3204-4a58-9171-c0984c3911e7">
           <AttributeID>Sport</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd56ac0d-9d5f-48e0-9d2f-1b1accfc5e92">
+          <AttributeID>Event</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="3b23f26f-3971-49d3-962e-4d148afe536a">
+    <Dimension dwd:design-time-name="1eaee568-4a7a-4aa4-967c-551c107b92f3">
+      <ID>Uczestnik Zmienne</ID>
+      <Name>Uczestnik Zmienne</Name>
+      <DimensionID>Uczestnik Zmienne</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="290292be-3ef3-4594-9a33-f7080da4b21f">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="96ec572e-852f-4d4a-be86-f32fdb117255">
+          <AttributeID>Wiek</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d3b05de-ad0b-479e-83a9-f96707b4df5f">
+          <AttributeID>Waga</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a467f32a-4f13-406b-b9f1-f2b64c8170a0">
+          <AttributeID>Wzrost</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e3d52a11-1ea6-40a6-8f89-3221cfd35ab7">
+      <ID>Medal</ID>
+      <Name>Medal</Name>
+      <DimensionID>Medal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d0221d7d-4934-4a9e-88e8-ba10c8b08541">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d31fbc3e-db09-47ec-900e-fe0f4c3e1b71">
+          <AttributeID>Kolor</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f93a7d88-503d-4f16-a9a0-4c1b3eee6ce4">
+      <ID>Zespol</ID>
+      <Name>Zespol</Name>
+      <DimensionID>Zespol</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1ceb612c-5273-458c-ab67-b0828a0764b4">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aac0f6fb-b32a-4f16-bdb5-3f1571d754be">
+          <AttributeID>Nazwa</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59497585-12fa-42bb-b8a6-1144e7003add">
+          <AttributeID>Skrot</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5c9428e1-ec13-46f6-8a0e-9bb2faf7cd9a">
+          <AttributeID>Region</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3d70b662-1bf8-401d-87ef-d389e2600b2a">
       <ID>Uczestnik Stale</ID>
       <Name>Uczestnik Stale</Name>
       <DimensionID>Uczestnik Stale</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="26531435-b4a9-43b0-b8dc-8a67246385b6">
+        <Attribute dwd:design-time-name="0ce5ce15-f527-4668-859c-f421d314a50f">
           <AttributeID>Id</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3581793b-914e-4675-b8fc-6abeab5f22a0">
+        <Attribute dwd:design-time-name="41857627-cffe-4117-8d4c-4fca5db9eaf2">
+          <AttributeID>Imie Nazwisko</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aab1fd44-6ef6-492d-9351-06fc68e0d588">
           <AttributeID>Plec</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
+    <Dimension dwd:design-time-name="d1679726-7ca8-43b2-bd2a-5c3e44bf8620">
+      <ID>Olimpiada</ID>
+      <Name>Olimpiada</Name>
+      <DimensionID>Olimpiada</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4813da46-017b-41dd-b820-ff7c747b7535">
+          <AttributeID>Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c6995389-2b6f-4e7f-959c-793d9b594c19">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1daa310a-2372-48a6-8a07-4a57abde9e99">
+          <AttributeID>Miasto</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="431700a9-2a99-4ca8-b0e0-57f4b1fcf7b8">
+          <AttributeID>Kraj</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e0f2134f-65af-4859-b8b6-c6860e22e217">
+          <AttributeID>Pora Roku</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="df15d004-20c3-40bc-9325-a58bae3dd628">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="11325883-c79b-48c5-8a7b-685c62c62e9b">
+    <MeasureGroup dwd:design-time-name="b51e0610-41df-40c1-86e3-80cd62e5663e">
       <ID>Wystep Na Olimpiadzie</ID>
       <Name>Wystep Na Olimpiadzie</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -332,14 +373,14 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="6b5b9fbd-de03-4aa5-9142-21d4131d27b9">
+        <Measure dwd:design-time-name="3c66b703-b16b-4faf-8988-a6c333357fd1">
           <ID>Wystep Na Olimpiadzie Count</ID>
           <Name>Wystep Na Olimpiadzie Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="de7e1f66-6a7d-44b0-9f1b-43d85b5909ea">
+          <Source dwd:design-time-name="716d49b5-8a57-4c5e-9c24-c49121f875d6">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="2a206313-5cd9-47e4-9641-eefe0e9ef6ce">
+            <Source xsi:type="RowBinding" dwd:design-time-name="5e24a54d-87da-4888-a5f0-3961354dac5b">
               <TableID>dbo_Wystep_na_olimpiadzie</TableID>
             </Source>
           </Source>
@@ -348,17 +389,17 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a1784bbb-6534-427d-9d2c-4a0942e9112d">
-          <CubeDimensionID>Zespol</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1c8bed49-a1ed-4d4a-b145-fbd32fe80c81">
+          <CubeDimensionID>Uczestnik Stale</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="d3a629b3-8543-4ad6-a111-f60b19ffef18">
+            <Attribute dwd:design-time-name="b52b3c93-0254-4464-9998-cb3228a24122">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="725bd69d-2b97-4b27-b528-51bb59b238ca">
+                <KeyColumn dwd:design-time-name="ceedf1e4-1f65-49db-87df-7f93b2d8095c">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4c5c74a8-ce1d-49ad-be57-6a8ff0478067">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="def4c7c6-dd7e-478a-a0ca-1bf9b4136acb">
                     <TableID>dbo_Wystep_na_olimpiadzie</TableID>
-                    <ColumnID>Zespol_id</ColumnID>
+                    <ColumnID>Uczestnik_id</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -366,51 +407,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e5a835e9-1d9d-4713-b61c-72fbe1090d9b">
-          <CubeDimensionID>Medal</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="523c417a-27ea-4c43-9bfb-574165b39693">
-              <AttributeID>Id</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="27d1696a-ee7c-4e4a-b4bc-80a6f28e3e4e">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="82776b7b-2471-4798-af24-45c8d4efaae0">
-                    <TableID>dbo_Wystep_na_olimpiadzie</TableID>
-                    <ColumnID>Medal_id</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7bcadda7-9040-4bb5-b4f7-d9a2b8a10e88">
-          <CubeDimensionID>Uczestnik Zmienne</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="330a3f5d-54b4-464a-841e-f98f36bd774b">
-              <AttributeID>Id</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="c9ff0459-ed3a-4132-8fb6-28ef21bd393e">
-                  <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="afc14bbf-3c1c-4757-b900-d5e5a3fe16fb">
-                    <TableID>dbo_Wystep_na_olimpiadzie</TableID>
-                    <ColumnID>Uczestnik_zmienne_id</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eeb79fef-e041-43a2-a2ab-5d13eff37172">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9ae9b162-27aa-45ef-8008-b0ad115b0590">
           <CubeDimensionID>Dyscyplina</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="0ca96539-5fbf-440a-bd78-17f6d736f59a">
+            <Attribute dwd:design-time-name="935a79f5-470c-48c3-971d-31e431d57994">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="ac3995fe-1a20-46b2-ba77-21712646b54d">
+                <KeyColumn dwd:design-time-name="5daaa71b-7a84-46e1-94a8-cc86be8751b1">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8d76cb99-7fb4-4cac-951d-ca49ab67b5c4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e3aa5d12-ca9d-4ea6-bd50-4da0c02dcd81">
                     <TableID>dbo_Wystep_na_olimpiadzie</TableID>
                     <ColumnID>Dyscyplina_id</ColumnID>
                   </Source>
@@ -420,17 +425,71 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="bffbaf03-b052-4ccb-ab4f-b8e2a64834d4">
-          <CubeDimensionID>Uczestnik Stale</CubeDimensionID>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1270f1ab-9a3d-4a0c-87d8-dcc48cb82d39">
+          <CubeDimensionID>Uczestnik Zmienne</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f51b3930-15f1-45eb-aaa0-0c6be9eab920">
+            <Attribute dwd:design-time-name="73ace0f8-5451-488d-ad27-1fd25277ac8e">
               <AttributeID>Id</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3c754a95-2095-4646-b72d-6a8da0193286">
+                <KeyColumn dwd:design-time-name="d9da5d95-ae38-4eb3-af6f-989bbe3aa91c">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="84bba2f0-9b12-4515-b918-a1ead010c4f7">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="01e554f3-c2a5-456e-9307-ef5b979a5f31">
                     <TableID>dbo_Wystep_na_olimpiadzie</TableID>
-                    <ColumnID>Uczestnik_id</ColumnID>
+                    <ColumnID>Uczestnik_zmienne_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fbb8206a-9838-437f-af3a-d1a88bcfb0b3">
+          <CubeDimensionID>Medal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9795895c-d6ba-4ffb-aa86-3f47144665c6">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="06563f5b-69ae-4e4b-8225-b0be54d1938d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="40c7e4b8-726d-4c9a-b496-97be8b3e420d">
+                    <TableID>dbo_Wystep_na_olimpiadzie</TableID>
+                    <ColumnID>Medal_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d21aa94d-cd4c-44d0-8950-cd0797c5334c">
+          <CubeDimensionID>Olimpiada</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="20f39735-97ff-4f73-8088-b6747cf9d536">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="12dbe0c1-a6c4-42ef-af18-82cc7d12c17f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eda12f20-192d-42ed-bf3c-b5ff6cd1517f">
+                    <TableID>dbo_Wystep_na_olimpiadzie</TableID>
+                    <ColumnID>Oplimpiada_id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7084314e-3bcd-4259-b111-76024eca0ebf">
+          <CubeDimensionID>Zespol</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5f11c894-b345-4bbd-8543-2cc65146d4c4">
+              <AttributeID>Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1589d971-8dea-4a73-a866-0117885fe1b2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5cb0c98d-8bc1-437f-b5e6-5df36d954c5c">
+                    <TableID>dbo_Wystep_na_olimpiadzie</TableID>
+                    <ColumnID>Zespol_id</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
@@ -442,7 +501,7 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="1943feea-47e6-42c7-ae1a-af4c094065ce">
+  <Source dwd:design-time-name="93304599-0075-4c66-be5c-0843b86bc922">
     <DataSourceViewID>DataSourceView</DataSourceViewID>
   </Source>
 </Cube>

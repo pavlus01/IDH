@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{8E32C9BA-6A5E-4B4A-9D8C-E2F27A2D0B8A}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{1DDE3A9B-D7EF-4329-969D-5B4174AE5479}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADf+w9PrE1iv/8KE8iPL2kqN10WNmLrMQ8/S0FCEno6ZgAAAAAOgAAAAAIAACAAAABc0q7qMWqnyXRf+ulMJVHHExgXA2F3SbH+b8kCvcZ6WyAAAABH6L4Ky77aGDVEM6OX5p8OtTqG6ivXUjB4XYwqEJT5qEAAAADFtsV+qsHOICL3nJfS3jo2K+lQ95RytP3iGpiyq2Ng6v4n+SXaJkOGDCwiLSjFtwas1fBQZNy1bJvtF0mhGn+c</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABpDpmbtdzu6lC9hFk5pKYiW1Bh7e6fFKdLci04UdZRXAAAAAAOgAAAAAIAACAAAAC0e5RCdsH5cqL5F7YK6gZx7j/6FJCW0nhGZvLm7/F2syAAAAB4W2c46tnz+twMLvP/PHtLkFcJhHuU3I5SEPZz6UfuKUAAAABpJgFn7Zf72O2ZX3CNyN5enHpvZ7l0wEkYPuicC6xwB0Osu65SnAoRNGBtPjn6Vmww1Dqo46gaj384i3iLxIRX</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -212,19 +212,7 @@
                   dataType="System.String"
                   description="The SQL command to be executed."
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT 
-CASE
-     WHEN wiek = 0 THEN NULL
-      ELSE wiek
-END AS wiek,
-CASE
-     WHEN wzrost = 0 THEN NULL
-      ELSE wzrost
-END AS wzrost,
-CASE
-     WHEN waga = 0 THEN NULL
-      ELSE waga
-END AS waga
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT wiek, wzrost, waga
 FROM tmp;</property>
                 <property
                   dataType="System.String"
@@ -394,13 +382,13 @@ FROM tmp;</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="366,123" />
-        <NodeLayout
           Size="155,42"
           Id="Package\Data Flow Task"
           TopLeft="375,280" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="366,123" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="451.75,165">
@@ -465,14 +453,6 @@ FROM tmp;</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLE DB Destination">
     <Properties>
       <Property>
@@ -482,6 +462,14 @@ FROM tmp;</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

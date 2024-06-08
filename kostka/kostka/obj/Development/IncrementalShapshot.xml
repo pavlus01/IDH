@@ -1,8 +1,8 @@
 ﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
   <Target>
     <Database>kostka</Database>
-    <Server>localhost</Server>
-    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+    <Server>DESKTOP-GNIJC2A\DB2</Server>
+    <ConnectionString>Data Source=DESKTOP-GNIJC2A\DB2;Timeout=0</ConnectionString>
   </Target>
   <Options>
     <TransactionalDeployment>false</TransactionalDeployment>
@@ -19,70 +19,70 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>DGRYJgysWaAGEp+77rhiO8r8ay0=07/06/2024 13:24:2806/06/2024 16:23:08</TimeStamp>
+        <TimeStamp>DTqFXi6DvCB2GNX+GW4PTu3/iYU=08.06.2024 21:52:5207.06.2024 22:43:52</TimeStamp>
         <ID>
           <String>Olympics Db</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>ByaqUrQodBJVOYMMCql3eKgQuec=06/06/2024 16:34:2306/06/2024 16:29:24</TimeStamp>
+        <TimeStamp>ByaqUrQodBJVOYMMCql3eKgQuec=07.06.2024 22:43:5207.06.2024 22:43:52</TimeStamp>
         <ID>
           <String>DataSourceView</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>CQ7UJ845y9X1Qdl2s69xsxGNwWw=06/06/2024 16:39:2806/06/2024 16:39:28</TimeStamp>
-        <ID>
-          <String>Medal</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>VQT7OTC3o0Ud9ivNr8pvXo9kwEE=06/06/2024 16:45:1406/06/2024 16:45:14</TimeStamp>
-        <ID>
-          <String>Zespol</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>xfasX02L2SxN4rxGLKcXfn9pZIQ=06/06/2024 16:48:0006/06/2024 16:48:00</TimeStamp>
-        <ID>
-          <String>Dyscyplina</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>YbXzcI9TerccjIQpBKDZ0BfqSyo=06/06/2024 16:49:0506/06/2024 16:49:05</TimeStamp>
-        <ID>
-          <String>Uczestnik Zmienne</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>dOXWdP1YVYzRiiA7h47mMGlqnpU=06/06/2024 16:50:1406/06/2024 16:50:14</TimeStamp>
+        <TimeStamp>TIpVit5ByyZl3FDoY89RkRh4ATc=08.06.2024 23:13:1708.06.2024 22:58:26</TimeStamp>
         <ID>
           <String>Uczestnik Stale</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>fuua4IBec0sMnupCSD40EsZQBKQ=07/06/2024 12:47:5306/06/2024 17:19:39</TimeStamp>
+        <TimeStamp>N+KI4It5ZGAUBSpiwC/31t7zR0I=08.06.2024 23:13:5508.06.2024 22:58:26</TimeStamp>
+        <ID>
+          <String>Dyscyplina</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>6XTNRhhw5PWW4BjbVqZvYlaVSf0=09.06.2024 00:00:1808.06.2024 22:58:26</TimeStamp>
+        <ID>
+          <String>Uczestnik Zmienne</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GNUsAs6Fch+e+HFhD/lofEFgs54=08.06.2024 23:14:3808.06.2024 22:58:26</TimeStamp>
+        <ID>
+          <String>Medal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>3F7ZcBZrwj7CP0Xvy6leLYm4bhA=08.06.2024 23:22:2208.06.2024 22:58:26</TimeStamp>
         <ID>
           <String>Olimpiada</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>t0Ubr44swrshc7dwcrBfbAjW8OE=06/06/2024 17:19:3906/06/2024 16:57:00JvSDIYtg9eb+TOJKX4/Tx1iI51k=06/06/2024 16:57:0006/06/2024 16:57:00</TimeStamp>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mSttjy+R4QOm2yCL8tqYsAQBqZE=08.06.2024 23:23:0008.06.2024 22:58:26</TimeStamp>
         <ID>
-          <String>Cube</String>
+          <String>Zespol</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Tm1s0KmerUcNR/D6oN6OXJtBrME=08.06.2024 23:20:3108.06.2024 22:58:26iZ8PaJTiJJhahIqGGufe9OgfEpw=08.06.2024 22:58:2708.06.2024 22:58:26</TimeStamp>
+        <ID>
+          <String>cube</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>5QYPRlVixc57jIe86lw0NZvSkyU=07/06/2024 08:53:3006/06/2024 17:00:58</TimeStamp>
+        <TimeStamp>n60jFdPU0v+5p+7+Iixt6Hi5/H8=08.06.2024 21:40:0307.06.2024 22:43:52</TimeStamp>
         <ID>
           <String>Role</String>
         </ID>
@@ -90,7 +90,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>zIXZVeaREBgl7Rur1wkERQWZz3Y=06/06/2024 17:35:2506/06/2024 16:12:47</TimeStamp>
+      <TimeStamp>zIXZVeaREBgl7Rur1wkERQWZz3Y=07.06.2024 22:43:5207.06.2024 22:43:52</TimeStamp>
       <ID>
         <String>kostka</String>
       </ID>
@@ -98,6 +98,6 @@
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
-  <ProcessingComplete>false</ProcessingComplete>
-  <LastDeployed>2024-06-07T11:56:15.883333Z</LastDeployed>
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-06-08T22:00:21.446667Z</LastDeployed>
 </DeploymentSnapshot>

@@ -12,10 +12,7 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Medal</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Zespol</ID>
+        <ID>Uczestnik Stale</ID>
       </Dimension>
       <Dimension>
         <ID>Dyscyplina</ID>
@@ -24,15 +21,18 @@
         <ID>Uczestnik Zmienne</ID>
       </Dimension>
       <Dimension>
-        <ID>Uczestnik Stale</ID>
+        <ID>Medal</ID>
       </Dimension>
       <Dimension>
         <ID>Olimpiada</ID>
       </Dimension>
+      <Dimension>
+        <ID>Zespol</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Cube</ID>
+        <ID>cube</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Wystep Na Olimpiadzie</ID>

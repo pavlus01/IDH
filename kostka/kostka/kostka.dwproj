@@ -8,24 +8,20 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Cube.cube</Name>
-      <FullPath>Cube.cube</FullPath>
+      <Name>cube.cube</Name>
+      <FullPath>cube.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Cube.partitions</Name>
-          <FullPath>Cube.partitions</FullPath>
+          <Name>cube.partitions</Name>
+          <FullPath>cube.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Medal.dim</Name>
-      <FullPath>Medal.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Zespol.dim</Name>
-      <FullPath>Zespol.dim</FullPath>
+      <Name>Uczestnik Stale.dim</Name>
+      <FullPath>Uczestnik Stale.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dyscyplina.dim</Name>
@@ -36,12 +32,16 @@
       <FullPath>Uczestnik Zmienne.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Uczestnik Stale.dim</Name>
-      <FullPath>Uczestnik Stale.dim</FullPath>
+      <Name>Medal.dim</Name>
+      <FullPath>Medal.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Olimpiada.dim</Name>
       <FullPath>Olimpiada.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Zespol.dim</Name>
+      <FullPath>Zespol.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="MedalT"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{0710FB00-D6FE-47DF-A6AF-1E431CF7C2E3}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{EC53CFB7-D1A8-4AA4-884E-B80317B9C5FE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABgm3763r5ov3vqyzi8WiT87wn08mQDEYj7iVH/GBr3QwAAAAAOgAAAAAIAACAAAADe7oaHv1Y/wut/YekTq+Kb/kkNgZ69ouHz/Y2qjviXBSAAAADUL8uQbuSn+x4ZbqmZh/ylk4JLXxWbQb2dSnJ9XaETbEAAAAC7bEHDuCGhLH4MevTf9434qIfd+EAmCgHGHEpxXJ/QR7jur5by1NQUU13+DuxqAqXeCmEVfMio9axSEEfAtiel</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzByVii3k/kaPIxHEin6p+gAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADdoVg1eG8V4epynTaDSVhAcph9osx9bPG4bLvh1qHUwwAAAAAOgAAAAAIAACAAAAA6TzNXjioC9IizoyzUbpxtIzCzXBoBL4b4Y2BhQ7fpqSAAAAARB5dITHJw7WYbULGibLPA1c7sW5iiGMfYQc4Ms6myw0AAAACwkTvMvDJcK6bLujduC475iafU60npcNMnYiAh18u982iEDm23DlqyIXiH5MPMIuG1J6sRJexAshaDZgp7vtd2</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -198,7 +198,7 @@
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT
 CASE
-     WHEN medal = '' THEN NULL
+     WHEN medal = '' THEN 'Brak'
       ELSE medal
 END AS medal
  FROM Tmp;</property>
